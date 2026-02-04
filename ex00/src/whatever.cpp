@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   whatever.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 11:49:53 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/03 22:13:18 by danielafons      ###   ########.fr       */
+/*   Created: 2026/02/03 22:04:48 by danielafons       #+#    #+#             */
+/*   Updated: 2026/02/03 22:09:56 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP
-#define WHATEVER_HPP
-#include <iostream>
+#include "whatever.hpp"
 
-template <typename T> T myMax();
+void swap(int &a, int &b)
+{
+    int tmp;
 
-void swap(int &a, int &b);
-int& max(int &a, int &b);
-int& min(int &a, int &b);
+    tmp = a;
+    a = b;
+    b = tmp;
+}
 
-#endif
+int& max(int &a, int &b)
+{
+    if (a > b)
+        return a;
+    return (b);
+}
+
+int& min(int &a, int &b)
+{
+     if (a < b)
+        return a;
+    return (b);
+}
