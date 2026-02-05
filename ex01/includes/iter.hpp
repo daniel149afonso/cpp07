@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:49:53 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/05 11:32:52 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/05 14:28:28 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,12 @@
 #include <iostream>
 
 template <typename T>
-void swap(T &a, T &b){
-    T tmp;
-
-    tmp = a;
-    a = b;
-    b = tmp;
+void iter(T *a, const T b, void (*f)(T&)){
+    for (size_t i = 0; i < b; i++)
+    {
+        f(a[i]);
+    }
 };
 
-template <typename T>
-T& max(T &a, T &b){
-    if (a > b)
-        return a;
-    return (b);
-};
-
-template <typename T>
-T& min(T &a, T &b){
-    if (a < b)
-        return a;
-    return (b);
-};
 
 #endif

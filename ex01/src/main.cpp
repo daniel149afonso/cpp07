@@ -1,36 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.cpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/03 22:04:48 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/03 22:09:56 by danielafons      ###   ########.fr       */
+/*   Created: 2026/01/15 11:48:27 by danielafons       #+#    #+#             */
+/*   Updated: 2026/02/05 14:15:23 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "whatever.hpp"
+#include "../includes/iter.hpp"
 
-void swap(int &a, int &b)
+void print_value(const T& value)
 {
-    int tmp;
-
-    tmp = a;
-    a = b;
-    b = tmp;
+    std::cout << value << std:endl;
 }
 
-int& max(int &a, int &b)
+int main(void)
 {
-    if (a > b)
-        return a;
-    return (b);
-}
-
-int& min(int &a, int &b)
-{
-     if (a < b)
-        return a;
-    return (b);
+    std::string str = "Hello";
+    
+    ::iter(str, str.size(), print_value);
+    return (0);
 }
