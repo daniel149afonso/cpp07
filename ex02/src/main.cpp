@@ -6,13 +6,11 @@
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:48:27 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/07 14:37:08 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/09 14:01:59 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/iter.hpp"
-
-template <typename T>
 
 void print_value(const T& value)
 {
