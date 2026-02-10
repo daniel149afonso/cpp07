@@ -6,7 +6,7 @@
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:49:53 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/09 14:27:40 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/09 20:33:23 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,11 @@ template <typename T> class Array
         Array();
         Array(unsigned int n);
         Array(const Array& other);
-        Array<int>& operator=(const Array& other);
         ~Array();
+
+        // Operators
+        Array& operator=(const Array& other);
+        Array& operator[](const Array& other);
 
         //public methods
         unsigned int size() const;
@@ -35,8 +38,8 @@ template <typename T> class Array
         //Exceptions
         class OutOfBounds : public std::exception{
             const char* what() const throw();
-        }
+        };
 };
 
-#include "Array.tpp"
+#include "../src/Array.tpp"
 #endif

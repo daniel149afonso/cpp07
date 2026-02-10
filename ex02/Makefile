@@ -2,7 +2,7 @@
 #                                   CONFIG                                     #
 # **************************************************************************** #
 
-NAME        = iter
+NAME        = template
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 RM          = rm -f
@@ -10,7 +10,8 @@ RM          = rm -f
 SRC_DIR     = src
 OBJ_DIR     = objs
 
-SRC         = $(SRC_DIR)/main.cpp
+SRC         = $(SRC_DIR)/main.cpp \
+				$(SRC_DIR)/Array.tpp
 
 OBJ         = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
