@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
+/*   By: daafonso <daafonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 12:52:34 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/12 15:26:38 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/12 18:50:37 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,22 @@ Array<T>::~Array()
     delete[] _data;
 }
 
-// Getter
+// Getters
 template <typename T>
 unsigned int Array<T>::size() const
 {
     return _length;
+}
+
+// Print all data
+template <typename T>
+void Array<T>::print_all_data()
+{
+	for (unsigned int i = 0; i < _length; i++)
+	{
+		std::cout << _data[i];
+	}
+	std::cout << std::endl;
 }
 
 // Exception
