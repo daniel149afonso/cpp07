@@ -6,7 +6,7 @@
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 12:52:34 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/09 21:27:56 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/12 15:26:38 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ Array<T>& Array<T>::operator=(const Array& other)
 
 // Access Operator Non-Const
 template <typename T>
-T& Array<T>::operator[](unsigned int i) const
+T& Array<T>::operator[](unsigned int i)
 {
     if (i >= _length)
         throw OutOfBounds();

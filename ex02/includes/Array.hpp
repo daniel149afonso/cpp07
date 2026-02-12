@@ -6,7 +6,7 @@
 /*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:49:53 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/09 20:33:23 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/12 15:26:44 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ template <typename T> class Array
 
         // Operators
         Array& operator=(const Array& other);
-        Array& operator[](const Array& other);
+        T& operator[](unsigned int i);
+        const T& operator[](unsigned int i) const;
 
         //public methods
         unsigned int size() const;
