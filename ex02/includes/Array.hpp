@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:49:53 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/12 18:09:13 by daafonso         ###   ########.fr       */
+/*   Updated: 2026/02/14 17:14:41 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,11 @@ template <typename T> class Array
 			const char* what() const throw();
 		};
 };
+
+typedef struct s_struct{
+	int nb;
+	std::string str;
+} t_struct;
 
 #include "../src/Array.tpp"
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 12:52:34 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/12 18:50:37 by daafonso         ###   ########.fr       */
+/*   Updated: 2026/02/14 17:10:04 by danielafons      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void Array<T>::print_all_data()
 {
 	for (unsigned int i = 0; i < _length; i++)
 	{
-		std::cout << _data[i];
+		std::cout << _data[i] << std::endl;
 	}
 	std::cout << std::endl;
 }
