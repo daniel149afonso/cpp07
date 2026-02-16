@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danielafonso <danielafonso@student.42.f    +#+  +:+       +#+        */
+/*   By: daafonso <daafonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:48:27 by danielafons       #+#    #+#             */
-/*   Updated: 2026/02/14 17:15:04 by danielafons      ###   ########.fr       */
+/*   Updated: 2026/02/16 16:48:50 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Array.hpp"
-
-t_struct;
 
 void testing_int_array()
 {
@@ -88,7 +86,7 @@ int main()
 {
 	srand(time(NULL));
 	Array <int> a;
-	
+
 	testing_int_array();
 	testing_int_array_wrong_index();
 	testing_string_array();
